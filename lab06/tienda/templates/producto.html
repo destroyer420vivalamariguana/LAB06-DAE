@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %} <br>
+<div class="col-lg-4 col-md-6 mb-4">
+    <div class="card h-100"> 
+      <a href="producto/{{ producto.id}}/"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
+      <div class="card-body">
+        <h4 class="card-title">
+          <a href="producto/{{ producto.id}}/">{{ producto.nombre }}</a>
+        </h4>
+        <h5>S/. {{ producto.precio }}</h5>
+        <p class="card-text">Categoria: {{ producto.categoria.nombre }}</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+      </div>
+    </div>
+  </div>
+{% endblock %}
